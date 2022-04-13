@@ -1,0 +1,52 @@
+def getArea(width,height):
+    area=width*height
+    print(f"矩形的面积为{area}")
+getArea(5,3)
+def welcome(name="会员"):
+    msg = f"尊敬的{name}早上好"
+    return msg 
+
+# TODO 调用welcome函数并传递参数"Gary"
+i=welcome("Gary")
+print(i)
+print(welcome())
+
+# TODO 不传递参数调用welcome函数
+def welcome(name="会员"):
+    i=f"尊敬的{name}早上好"
+    return i
+    
+    
+
+    
+ret = welcome("Gary")
+print(ret)
+ret = welcome()
+print(ret)
+# TODO 定义sayWelcome函数
+def sayWelcome(name,language):
+    if language=="ZH":
+        i= f"欢迎你,{name}"
+    if language=="EN":
+        i= f"{name},welcome"
+        return i
+
+# TODO 调用函数并输出结果
+ret=sayWelcome("Jack", "EN")
+print(ret)
+# TODO 定义sayWelcome函数
+def sayWelcome(name,language="ZH"):
+    if language=="ZH":
+        i= f"欢迎你,{name}"
+        
+       
+    if language=="EN":
+        i= f"{name},welcome"
+    return i
+
+# TODO 调用函数并传递"Gary"
+ret=sayWelcome("Gary","ZH")
+print(ret)
+#  TODO 调用函数并传递"Jack"与"EN"
+ret=sayWelcome("Jack", "EN")
+print(ret)
