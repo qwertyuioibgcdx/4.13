@@ -1,0 +1,11 @@
+# 4.13
+def convert(moneyType,mount):
+    if moneyType=="dollar":
+        return mount/6.681  
+    if moneyType=="pound":
+        return pound/8.8162
+    if moneyType=="yen":
+        return yen/0.06052
+    
+ret=convert("dollar",500)
+print(ret)
